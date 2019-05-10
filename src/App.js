@@ -6,21 +6,25 @@ import ReviewCard from './components/ReviewCard';
 import reviews from './review_data';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
+const App = () => {
+  const component = new React.Component()
+
+  component.render = () => {
+    return(
       <div className="App">
-       	<Navbar/>
-		    <Splash/>
+        <Navbar/>
+        <Splash/>
         <Testimonials/>
-    		<div className = "container">
-    			<div className="row">
+        <div className = "container">
+          <div className="row">
 
           </div>
-    		</div>
-    </div>
-    );
+        </div>
+      </div>
+    )
   }
+
+  return component
 }
 
 export default App;

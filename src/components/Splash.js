@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './css/Splash.css';
 
-const Splash = ()=>{
+const Splash = () => {
 	return(
 		<div className="Splash">
 			<div className="container">

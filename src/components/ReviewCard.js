@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/Review.css';
 
-function ReviewCard(props){
+const ReviewCard = (props) => {
 	return(
 		<div className="col-4 Review">
 			<div className="card text-center mb-3r">
@@ -15,7 +15,7 @@ function ReviewCard(props){
 					<a href="#" className="btn btn-warning">Full Review</a>
 			  </div>
 			  <div className="card-footer text-muted">
-					
+
 			  </div>
 			</div>
 		</div>

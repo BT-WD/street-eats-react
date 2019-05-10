@@ -28,25 +28,30 @@ Have students navigate to a website of their choice that is made with React (REM
 As we have discussed, React allows developers to build websites by piecing together various components. This makes the development processing easier, as the website is now built with modular pieces that can be modified, added, and removed. But what if we want to make a reuse and customize a component without copy and pasting our code into a whole new component? That's where props come in, and this allows us to use our components as templates that can be customized with specified PROPerties (see what I did there?).
 
 <a id="singleprop"></a>
-### Passing Our First Property 
+### Passing Our First Property
 Props are passed from the parent element to the child element. We are going to pass our first prop from App.js component (parent) to our Testimonials.js (child) component. To do so, we are going to modify the code in the App.js and Testimonials.js files to the following:
 
 ```javascript
-class App extends Component {
-  render() {
-    return (
+
+const App = () => {
+  const component = new React.Component()
+
+  component.render = () => {
+    return(
       <div className="App">
-       	<Navbar/>
-	<Splash/>
-        <Testimonials userTestimonial = "We Eat Street Meat is the best food review site that has ever been built. Now I can 	     eat my street meat with confidence I can sit through my afternoon meetings."/>
-    	<div className = "container">
-    	  <div className="row">
+        <Navbar/>
+        <Splash/>
+        <Testimonials userTestimonial = "We Eat Street Meat is the best food review site that has ever been built. Now I can eat my street meat with confidence I can sit through my afternoon meetings."/>
+        <div className = "container">
+          <div className="row">
 
           </div>
-    	</div>
-    </div>
-    );
+        </div>
+      </div>
+    )
   }
+
+  return component
 }
 ```
 
@@ -84,22 +89,28 @@ We are then going to render our prop onto the screen. To embed our prop into the
 In the example we just did, we passed a hard-coded string down as the prop "userTestimonial." We can also pass down a javascript variable (or even a function! But that's for another time) as a prop. Lets try this by refactoring our code a bit. We are going to create a variable called "testimonial" and set it equal to our previous review. Then we can pass it down as a prop by using JSX syntax as seen below:
 
 ```javascript
-class App extends Component {
-  render() {
+const App = () => {
+  const component = new React.Component()
+
+  component.render = () => {
+    // Declare our variable called testimonial
     let testimonial = "We Eat Street Meat is the best food review site that has ever been built. Now I can eat my street meat with confidence I can sit through my afternoon meetings."
-    return (
+    // Pass that variable to the Testimonials component as part of the return
+    return(
       <div className="App">
-       	<Navbar/>
-	<Splash/>
+        <Navbar/>
+        <Splash/>
         <Testimonials userTestimonial = { testimonial }/>
-    	<div className = "container">
-    	  <div className="row">
+        <div className = "container">
+          <div className="row">
 
           </div>
-    	</div>
-    </div>
-    );
+        </div>
+      </div>
+    )
   }
+
+  return component
 }
 ```
 
@@ -118,16 +129,18 @@ To complete We Eat Street Meat, we need to add reviews to our site. We have save
 Lets create our first review card by adding the following code to our App.js file:
 
 ```javascript
-class App extends Component {
-  render() {
+const App = () => {
+  const component = new React.Component()
+
+  component.render = () => {
     let testimonial = "We Eat Street Meat is the best food review site that has ever been built. Now I can eat my street meat with confidence I can sit through my afternoon meetings."
-    return (
+    return(
       <div className="App">
-       	<Navbar/>
-	<Splash/>
+        <Navbar/>
+        <Splash/>
         <Testimonials userTestimonial = { testimonial }/>
-    	<div className = "container">
-    	  <div className="row">
+        <div className = "container">
+          <div className="row">
             <ReviewCard
               name={ reviews.review_array[0].name}
               headline={ reviews.review_array[0].headline}
@@ -136,10 +149,12 @@ class App extends Component {
               posted={ reviews.review_array[0].posted}
             />
           </div>
-    	</div>
-    </div>
-    );
+        </div>
+      </div>
+    )
   }
+
+  return component
 }
 ```
 

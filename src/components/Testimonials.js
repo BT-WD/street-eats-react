@@ -1,7 +1,7 @@
 import React from 'react'
 import './css/Testimonials.css'
 
-function Testimonial(props){
+const Testimonial = (props) => {
   return(
     <div className="Testimonials">
       <div className="row">
@@ -13,5 +13,5 @@ function Testimonial(props){
     </div>
   )
 }
-
+ 
 export default Testimonial
