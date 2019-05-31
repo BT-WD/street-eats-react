@@ -1,6 +1,6 @@
 # Props in React
 
-This app accompanies the [Lecture Notes](https://github.com/upperlinecode/CS-and-the-City-Curriculum/blob/with-unit-2/react/3-react.md).
+This app accompanies these [Lecture Notes](https://github.com/upperlinecode/CS-and-the-City-Curriculum/blob/with-unit-2/react/3-react.md).
 
 <a id="singleprop"></a>
 ### Passing Our First Property
