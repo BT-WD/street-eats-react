@@ -2,7 +2,7 @@
 
 This app accompanies these [Lecture Notes](https://github.com/upperlinecode/CS-and-the-City-Curriculum/blob/with-unit-2/react/3-react.md).
 
-### Getting Started in CS50
+## Getting Started in CS50
 
 1. Clone this repository using `git clone`
 2. `cd` into the `street-meat-react` folder
