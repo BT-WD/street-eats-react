@@ -2,4 +2,13 @@
 
 This app accompanies these [Lecture Notes](https://github.com/upperlinecode/CS-and-the-City-Curriculum/blob/with-unit-2/react/3-react.md).
 
-`git clone` this repository, `cd` into the repository folder, and then `npm install` and `npm start`.
+### Getting Started in CS50
+
+1. Clone this repository using `git clone`
+2. `cd` into the `street-meat-react` folder
+3. `npm install`
+4. `npm start`
+5. If the app compiles with errors, to view the live app:
+    1. tap the `CS50 IDE` link in the header
+    2. Choose `Web Server`
+6. If the app fails to compile, re-clone the repository
