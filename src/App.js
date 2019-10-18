@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Navbar from './components/Navbar';
 import Splash from './components/Splash';
 import Testimonials from './components/Testimonials'
@@ -17,7 +17,7 @@ const App = () => {
         <Testimonials/>
         <div className = "container">
           <div className="row">
-
+          
           </div>
         </div>
       </div>

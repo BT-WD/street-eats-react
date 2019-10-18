@@ -19,7 +19,7 @@ let review_array = [
 },
 		{name: "Moussa's Lamb Platters",
 	headline: "Feels like someone set a bomb off in my stomach.",
-	summary: "AVOID AT ALL COSTS. It was clear that there was no sanitary standards at his cart. He didn't use gloves and pulled the meat from a bucket that looks like it was used to mop floors. The minute I bit into the lamb, I knew I had food poisoning.",
+	summary: "AVOID AT ALL COSTS. It smelled good so I thought I'd give it a try. An hour later, I knew I had food poisoning.",
 	stars: "⭐",
 	posted: "5 days ago"
 },

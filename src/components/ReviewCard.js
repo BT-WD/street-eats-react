@@ -9,13 +9,13 @@ const ReviewCard = (props) => {
 
 			  </div>
 			  <div className="card-body">
-					<h5 className="card-title"></h5>
-					<p className="card-text"></p>
-					<p className="card-text"></p>
-					<a href="#" className="btn btn-warning">Full Review</a>
+					<h5 className="card-title">PLACE HEADING HERE</h5>
+					<p className="card-text">PLACE SUMMARY HERE</p>
+					<p className="card-text">PLACE STARS HERE</p>
+          <button className="btn btn-warning">Full Review</button>
 			  </div>
 			  <div className="card-footer text-muted">
-
+          place date posted here
 			  </div>
 			</div>
 		</div>
