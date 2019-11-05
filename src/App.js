@@ -17,7 +17,7 @@ const App = () => {
         <Testimonials/>
         <div className = "container">
           <div className="row">
-          
+
           </div>
         </div>
       </div>
