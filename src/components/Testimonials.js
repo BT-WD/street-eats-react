@@ -1,7 +1,7 @@
-import React from 'react'
-import './css/Testimonials.css'
+import React from 'react';
+import './css/Testimonials.css';
 
-const Testimonial = (props) => {
+function Testimonial(props) {
   return(
     <div className="Testimonials">
       <div className="row">
@@ -11,7 +11,7 @@ const Testimonial = (props) => {
         </div>
       </div>
     </div>
-  )
+  );
 }
  
-export default Testimonial
+export default Testimonial;
