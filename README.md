@@ -2,11 +2,7 @@
 
 ![Street Eats Preview](./images/streeteatspreview.png)
 
-This app accompanies these [Lecture Notes](https://github.com/upperlinecode/CS-and-the-City-Curriculum/blob/master/react/props-jsx.md).
+This app accompanies the teacher's lecture and demo in class. 
 
 ## Getting Started
-
-1. Clone this repository using `git clone`
-2. `cd` into the street eats folder
-3. `npm install`
-4. `npm start`
+Use condesandbox.io to import the repo to a new sandbox
